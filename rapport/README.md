@@ -4,18 +4,18 @@ Ce dossier héberge le rapport technique et académique du projet Blog des Laur�
 
 ## 1. Organisation modulaire
 
-Le rapport est découpé en chapitres indépendants dans le sous-dossier `chapitres/` pour faciliter la rédaction progressive. Chaque fichier porte le numéro de sa position, suivi d'un nom dérivé de son titre (`1.remerciement.md`, `2.table-des-matieres.md`, ..., `25.chapitre-2-conclusion.md`). Le numéro fixe l'ordre du rapport sans configuration :
+Le rapport est découpé en chapitres indépendants dans le sous-dossier `chapitres/` pour faciliter la rédaction progressive. Chaque fichier porte le numéro de sa position, suivi d'un nom dérivé de son titre (`1.remerciement.md`, `2.table-des-matieres.md`, ..., `22.chapitre-2-conclusion.md`). Le numéro fixe l'ordre du rapport sans configuration :
 
 - `1.remerciement.md` : remerciement.
 - `2.table-des-matieres.md` : table des matières, remplie automatiquement par le script.
 - `3.chapitre-1-introduction.md` : introduction.
-- Les chapitres `4` à `9` couvrent le contexte, le cahier des charges et la méthodologie.
-- `10.planification.md` : organisation des sprints.
-- Les chapitres `11` à `15` couvrent la branche fonctionnelle et l'analyse fonctionnelle.
-- Les chapitres `16` à `18` couvrent la branche technique, la stack et l'architecture.
-- Les chapitres `19` à `22` couvrent le prototype et la conception.
-- `23.realisation.md` et `24.interfaces.md` : réalisation et interfaces.
-- `25.chapitre-2-conclusion.md` : conclusion et perspectives.
+- Les chapitres `4` à `8` couvrent le contexte, le cahier des charges et la méthodologie.
+- `9.planification.md` : planification.
+- Les chapitres `10` à `14` couvrent la branche fonctionnelle et l'analyse fonctionnelle.
+- `15.architecture-du-systeme.md` : architecture technique.
+- Les chapitres `16` à `19` couvrent le prototype et la conception.
+- `20.realisation.md` et `21.interfaces.md` : réalisation et interfaces.
+- `22.chapitre-2-conclusion.md` : conclusion et perspectives.
 
 Les chapitres encore vides contiennent seulement leur titre de niveau 1 : le script le reprend tel quel.
 
@@ -29,7 +29,7 @@ Le fichier unique consolidé `rapport.md` est généré automatiquement à parti
 
 Le script ne contient aucune liste de chapitres : il détecte tous les fichiers `.md` du dossier, les trie par ordre naturel du nom (préfixe numérique puis alphabet) et les numérote de 1 à N dans le rapport généré. Les titres sont repris du titre de niveau 1 présent dans le fichier, sinon déduits du nom du fichier.
 
-Les titres sont insérés tels quels, sans numérotation : le fichier `23.realisation.md` produit `# Réalisation`, et non `# Chapitre 23 : Réalisation`.
+Les titres sont insérés tels quels, sans numérotation : le fichier `20.realisation.md` produit `# Réalisation`, et non `# Chapitre 20 : Réalisation`.
 
 La table des matières est elle aussi générée : le chapitre qui contient le marqueur `<!-- SOMMAIRE -->` reçoit à cet endroit la liste des titres de tous les autres chapitres.
 

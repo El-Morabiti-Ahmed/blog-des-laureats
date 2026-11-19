@@ -1,4 +1,4 @@
-# Rapport de Projet
+# Rapport de Projet : Blog des Lauréats
 
 > Document consolidé généré automatiquement.
 
@@ -18,7 +18,6 @@
 - Cahier des charges
 - Méthodologie de travail
 - Méthode SCRUM
-- Processus 2TUP
 - Design thinking
 - Planification
 - Branche fonctionnelle
@@ -26,8 +25,6 @@
 - Définition du problème
 - Idéation
 - Diagramme de cas d’utilisation
-- Branche technique
-- Stack technologique
 - Architecture du système
 - Prototype (fonctionnalités, classes)
 - Conception
@@ -80,39 +77,6 @@ La méthodologie Scrum est une méthodologie agile qui permet de gérer un proje
 - **Travaux réalisés** : mise en place du dépôt et des dossiers du projet, formalisation du flux de travail, planification du sprint, modélisation fonctionnelle et première implémentation de la consultation d’un article avec un gabarit Blade responsive et la gestion de l’erreur 404.
 
 Les sprints suivants seront ajoutés au fil des sessions de planification, conformément au suivi tenu dans le dossier `sprints/`.
-
----
-
-# Processus 2TUP
-
-## Définition
-
-La méthode **2TUP** (*Two Tracks Unified Process*) est une méthode de développement logiciel agile et itérative. Elle peut être adaptée au contexte du **Blog des Lauréats**, à ses objectifs et aux besoins des **lauréats et des apprenants de Solicode Tanger**.
-
-Sa particularité repose sur une architecture en « Y » qui sépare distinctement deux axes de réflexion :
-
-- **la branche fonctionnelle**, consacrée à la compréhension des utilisateurs, des processus et des besoins métier ;
-- **la branche technique**, consacrée à l’étude des contraintes techniques, à la conception de l’architecture et au choix des technologies.
-
-La branche fonctionnelle permet de définir la **rédaction, la publication et la consultation d’articles professionnels**, tandis que la branche technique permet de déterminer l’architecture et les outils nécessaires, tels que **Laravel, Blade, Tailwind et MySQL**.
-
-Ces deux branches progressent en parallèle, puis se rejoignent dans une phase de réalisation. Cette organisation permet de limiter les risques, de vérifier la cohérence entre les besoins métier et la solution technique, et de faire évoluer progressivement le produit.
-
-## Schéma
-
-Le schéma suivant présente le fonctionnement général de la méthode 2TUP.
-
-![Cycle en Y](assets/images.jpg)
-
-**Figure : Processus 2TUP appliqué au Blog des Lauréats**
-
-La branche fonctionnelle part de la capture des besoins et aboutit à l’analyse fonctionnelle. En parallèle, la branche technique part des besoins techniques et aboutit à la définition de l’architecture et des technologies. La convergence des deux branches déclenche la phase de réalisation, qui comprend la conception, le codage, les tests, la recette et le déploiement.
-
-## Conclusion
-
-La méthode 2TUP fournit un cadre de travail structuré et adaptable pour la réalisation du **Blog des Lauréats**. La séparation entre les branches fonctionnelle et technique facilite la compréhension des besoins et permet de prendre les décisions techniques au moment approprié.
-
-En réunissant ces deux branches dans une phase de réalisation progressive, la méthode favorise la maîtrise des risques, l’amélioration continue et l’alignement du produit final sur les besoins des **lauréats et des apprenants de Solicode Tanger**. Elle constitue ainsi une approche pertinente pour les projets dont les exigences fonctionnelles et les contraintes techniques doivent être analysées conjointement.
 
 ---
 
@@ -234,45 +198,6 @@ _Figure : Cas d’utilisation du Blog des Lauréats._
 - L’administrateur intervient sur les catégories et sur la modération de l’ensemble du contenu.
 
 Le premier sprint couvre la consultation du détail d’un article tel que décrit dans `sprints/sprints.md`.
-
----
-
-# Branche technique
-
-Dans cette section, nous présentons la branche technique du projet Blog des Lauréats, qui consiste à décrire les choix technologiques, les outils et l’architecture adoptés pour assurer le bon fonctionnement de l’application, tout en garantissant une solution performante, sécurisée et adaptée aux besoins identifiés.
-
----
-
-## Choix technologiques
-
-Dans le cadre de ce projet, plusieurs technologies modernes et complémentaires ont été sélectionnées pour garantir la performance, la maintenabilité et la rapidité de la plateforme de publication des lauréats de Solicode Tanger.
-
-### Technologies backend
-
-- **PHP et Laravel 13** : framework backend en architecture MVC, fournissant les routes, la validation, la gestion des erreurs (dont la page 404) et le rendu des gabarits Blade.
-- **Architecture 3-tiers / MVC** : séparation entre la présentation, la logique métier et l’accès aux données, avec un **contrôleur mince** qui délègue le traitement à une **classe Service**.
-
-### Technologies frontend
-
-- **Gabarits Blade** : moteur de rendu natif de Laravel, utilisé pour structurer l’interface en composants réutilisables et responsives.
-- **HTML5 et CSS3/Tailwind** : mise en page moderne, responsive et adaptée aux différents écrans.
-- **JavaScript** : interactions légères côté navigateur (navigation, menus, confirmations).
-
-### Base de données
-
-- **MySQL** : système de gestion de base de données relationnelle fiable, utilisé pour stocker les articles, les catégories et les comptes des lauréats.
-
-### Outils et utilitaires externes
-
-- **Mermaid** : génération des diagrammes de contexte, de cas d’utilisation et de classes à partir d’une syntaxe textuelle.
-- **Git et GitHub CLI (`gh`)** : gestion des versions, branches dédiées par sprint et publication du dépôt.
-- **Agent IA (Antigravity / Copilot)** : skills natifs et règles Always-On pour assister la rédaction et le développement.
-- **Markdown et Marp** : rédaction de la documentation et des diaporamas de restitution.
-- **Node.js** : compilation automatique du rapport modulaire (`concat-chapitres.js`).
-
----
-
-# Stack technologique
 
 ---
 
