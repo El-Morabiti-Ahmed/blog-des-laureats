@@ -12,7 +12,7 @@ size: 16:9
 ### Application au projet Portail e-Sport
 
 - **Apprenant** : El Morabiti Ahmed
-- **Encadrant** : ESSARRAJ Fouad
+- **Encadrant** : ES-SARRAJ Fouad
 
 **Projet technique :** Gestion des jeux e-Sport  
 **Technologies :** HTML · Tailwind CSS · JavaScript · PHP · JSON
